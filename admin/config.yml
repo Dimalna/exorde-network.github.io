@@ -149,6 +149,33 @@ collections:
                 - {label: Title, name: title, widget: string}
                 - {label: Link, name: link, widget: string}
                 - {label: Logo, name: logo, widget: image}
+    - label: "Team"
+      name: "team"
+      file: "site/content/team.json"
+      i18n: true
+      fields:
+        - label: SEO
+          name: seo
+          widget: object
+          i18n: true
+          collapsed: true
+          fields:
+            - {label: Title, name: title, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, i18n: true}
+            - {label: Image, name: image, widget: image, i18n: true}
+        - {label: Title, name: title, widget: string, i18n: true}
+        - {label: Keyword, name: keyword, widget: string, i18n: true}
+        - label: Members
+          name: members
+          widget: list
+          collapsed: true
+          required: true
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Role, name: role, widget: string}
+            - {label: Subrole, name: subrole, widget: string}
+            - {label: Linkedin url, name: linkedin_url, widget: string}
+            - {label: Photo, name: photo, widget: image}
 - label: "Use cases"
   name: "use_cases"
   i18n: true
