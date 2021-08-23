@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: exorde-labs/exorde-landingpage
+  repo: exorde-labs/landing-page
   branch: develop # Branch to update (optional; defaults to master)
 
 media_folder: static/img
