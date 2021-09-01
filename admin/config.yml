@@ -156,18 +156,26 @@ collections:
             - {label: Description, name: description, widget: text, i18n: true}
             - {label: Image, name: image, widget: image, i18n: true}
         - {label: Title, name: title, widget: string, i18n: true}
-        - {label: Keyword, name: keyword, widget: string, i18n: true}
-        - {label: Description, name: description, widget: string, i18n: true}
-        - label: Worksystems
-          name: worksystems
-          widget: list
-          collapsed: true
-          required: true
-          i18n: true
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Description, name: description, widget: string, i18n: true}
-            - {label: Image, name: image, widget: image}
+        - {label: Description, name: description, widget: text, i18n: true}
+- label: "Worksystems"
+  name: "worksystems"
+  i18n: true
+  folder: "site/worksystems"
+  create: true
+  fields:
+    - label: SEO
+      name: seo
+      widget: object
+      i18n: true
+      collapsed: true
+      fields:
+        - {label: Title, name: title, widget: string, i18n: true}
+        - {label: Description, name: description, widget: text, i18n: true}
+    - {label: "Title", name: "title", widget: "string", i18n: true}
+    - {label: "Description", name: "description", widget: "string", i18n: true}
+    - {label: "Order", name: "order", widget: "number", i18n: duplicate}
+    - {label: "Thumbnail", name: "thumbnail", widget: "image", i18n: duplicate}
+    - {label: "Body", name: "body", widget: "markdown", i18n: true}
 - label: "Use cases"
   name: "use_cases"
   i18n: true
@@ -198,8 +206,14 @@ collections:
       file: "site/content/components/navbar.json"
       i18n: true
       fields:
-        - {label: Background color, name: background_color, widget: relation, collection: "style", search_fields: ["colors.*.name"], value_field: "colors.*.name"}
-        - {label: Text color, name: text_color, widget: relation, collection: "style", search_fields: ["colors.*.name"], value_field: "colors.*.name"}
+        - label: Items
+          name: items
+          widget: list
+          i18n: true
+          fields:
+            - {label: Label, name: label, widget: string, i18n: true}
+            - {label: Link, name: link, widget: string, i18n: duplicate}
+            - {label: External, name: external, widget: boolean, i18n: duplicate}
     - label: "Footer"
       name: "footer"
       file: "site/content/components/footer.json"
