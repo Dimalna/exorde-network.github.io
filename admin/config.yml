@@ -44,29 +44,6 @@ collections:
             - {label: Description, name: description, widget: text, i18n: true}
             - {label: Image, name: image, widget: image, i18n: true}
         - {label: Intro, name: intro, widget: text, i18n: true}
-        - label: News
-          name: news
-          widget: list
-          i18n: true
-          collapsed: true
-          required: false
-          fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Credibility, name: credibility, widget: number}
-            - {label: Image, name: image, widget: image}
-        - label: Stats
-          name: stats
-          widget: list
-          i18n: true
-          collapsed: true
-          required: false
-          fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Title color, name: title_color, widget: relation, collection: "style", search_fields: ["colors.*.name"], value_field: "colors.*.name"}
-            - {label: Indicator, name: indicator, widget: string}
-            - {label: Indicator color, name: indicator_color, widget: relation, collection: "style", search_fields: ["colors.*.name"], value_field: "colors.*.name"}
-            - {label: Description, name: description, widget: text}
-            - {label: Description color, name: description_color, widget: relation, collection: "style", search_fields: ["colors.*.name"], value_field: "colors.*.name"}
         - label: Sections
           name: sections
           widget: list
@@ -101,13 +78,12 @@ collections:
         - label: Partners
           name: partners
           i18n: true
-          collapsed: true
+          widget: object
           fields:
             - {label: Title, name: title, widget: string, i18n: true}
             - {label: Keyword, name: keyword, widget: string, i18n: true}
-            - {label: Description, name: description, widget: text, i18n: true}
-            - label: All
-              name: all
+            - label: List
+              name: list
               widget: list
               collapsed: true
               fields:
