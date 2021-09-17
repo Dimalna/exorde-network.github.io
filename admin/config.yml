@@ -157,6 +157,14 @@ collections:
             - {label: Image, name: image, widget: image, i18n: true}
         - {label: Title, name: title, widget: string, i18n: true}
         - {label: Description, name: description, widget: text, i18n: true}
+    - label: "Newsletter confirmation"
+      name: "newsletter-confirmation"
+      file: "site/content/newsletter-confirmation.json"
+      i18n: true
+      fields:
+        - {label: Title, name: title, widget: string, i18n: true}
+        - {label: Description, name: description, widget: string, i18n: true}
+        - {label: Button, name: button, widget: string, i18n: true}
 - label: "Worksystems"
   name: "worksystems"
   i18n: true
