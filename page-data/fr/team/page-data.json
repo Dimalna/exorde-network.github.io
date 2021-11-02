@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-team-tsx","path":"/fr/team","result":{"pageContext":{"locale":"fr","canonical":false,"alternatePages":[{"slug":"/team","locale":"en"}]}},"staticQueryHashes":["3897982121"]}
+{
+    "componentChunkName": "component---src-pages-team-tsx",
+    "path": "/fr/team",
+    "result": {"pageContext":{"locale":"fr","canonical":false,"alternatePages":[{"slug":"/team","locale":"en"}]}},
+    "staticQueryHashes": ["3897982121"]}

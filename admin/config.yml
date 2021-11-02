@@ -133,6 +133,22 @@ collections:
             - {label: Image, name: image, widget: image, i18n: true}
         - {label: Title, name: title, widget: string, i18n: true}
         - {label: Description, name: description, widget: text, i18n: true}
+    - label: "Blog"
+      name: "blog"
+      file: "site/content/blog.json"
+      create: true
+      i18n: true
+      fields:
+        - label: SEO
+          name: seo
+          widget: object
+          i18n: true
+          collapsed: true
+          fields:
+            - {label: Title, name: title, widget: string, i18n: true}
+            - {label: Description, name: description, widget: text, i18n: true}
+            - {label: Image, name: image, widget: image, i18n: duplicate}
+        - {label: Title, name: title, widget: string, i18n: true}
     - label: "Newsletter confirmation"
       name: "newsletter-confirmation"
       file: "site/content/newsletter-confirmation.json"
@@ -156,10 +172,29 @@ collections:
         - {label: Title, name: title, widget: string, i18n: true}
         - {label: Description, name: description, widget: text, i18n: true}
     - {label: "Title", name: "title", widget: "string", i18n: true}
-    - {label: "Description", name: "description", widget: "string", i18n: true}
+    - {label: "Description", name: "description", widget: text, i18n: true}
     - {label: "Order", name: "order", widget: "number", i18n: duplicate}
     - {label: "Thumbnail", name: "thumbnail", widget: "image", i18n: duplicate}
     - {label: "Body", name: "body", widget: "markdown", i18n: true}
+- label: "Blog posts"
+  name: "blog"
+  i18n: true
+  folder: "site/blog"
+  create: true
+  fields:
+    - label: SEO
+      name: seo
+      widget: object
+      i18n: true
+      collapsed: true
+      fields:
+        - {label: Title, name: title, widget: string, i18n: true}
+        - {label: Description, name: description, widget: text, i18n: true}
+    - { label: 'Title', name: 'title', widget: 'string',  i18n: true }
+    - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+    - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', i18n: duplicate}
+    - { label: 'Description', name: 'description', widget: 'string',  i18n: true }
+    - { label: 'Body', name: 'body', widget: 'markdown',  i18n: true }
 - label: "Use cases"
   name: "use_cases"
   i18n: true

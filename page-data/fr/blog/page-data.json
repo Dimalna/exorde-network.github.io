@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-tsx",
+    "path": "/fr/blog",
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"frontmatter":{"title":"Exorde : The start of a story","description":"Exorde in french means the first part of a speech, the introduction.  And tomorrow, we hope, the project that will allow you to introduce your passage on social networks and not fall into the trap of disinformation campaigns.","thumbnail":"/img/pexels-ron-lach-7944411.jpg"},"fields":{"localizedSlug":"/fr/blog/exorde-the-beginning"}}]}},"pageContext":{"locale":"fr","canonical":false,"alternatePages":[{"slug":"/blog","locale":"en"}]}},
+    "staticQueryHashes": ["3897982121"]}

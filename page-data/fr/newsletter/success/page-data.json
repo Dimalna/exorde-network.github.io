@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-newsletter-success-tsx","path":"/fr/newsletter/success","result":{"pageContext":{"locale":"fr"}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-newsletter-success-tsx",
+    "path": "/fr/newsletter/success",
+    "result": {"pageContext":{"locale":"fr"}},
+    "staticQueryHashes": []}
